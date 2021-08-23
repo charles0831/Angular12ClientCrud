@@ -37,4 +37,13 @@ export class AddTutorialComponent implements OnInit {
         }
       );
   }
+
+  newTutorial() {
+    this.submitted = false
+    this.tutorial = {
+      title: '',
+      description: '',
+      published: false
+    }
+  }
 }
